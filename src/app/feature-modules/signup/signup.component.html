@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+<body>
+
+	<section class="login">
+
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link"><a href="/login"><img src="../../../assets/left.png.svg" alt="">Return home</a></div>
+				<div class="contact">
+					<form [formGroup]="loginForm" action="">
+						<h3>SIGN UP</h3>
+            <div class="form">
+
+
+            <mat-form-field class="example-full-width" appearance="fill">
+
+              <input matInput placeholder="Email" formControlName="email" required>
+              <mat-error *ngIf="loginForm.controls?.email?.errors?.required">
+                Email is required
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+
+              <input matInput placeholder="Password" formControlName="password" required>
+              <mat-error *ngIf="loginForm.controls?.password?.errors?.required">
+                Password is required
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+
+              <input matInput placeholder=" Confirm Password" formControlName="confirmPassword" required>
+              <mat-error *ngIf="loginForm.controls?.password?.errors?.required">
+                Confirm Password is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+						<button class="submit">LOGIN</button>
+
+
+					</form>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+					<h2>SEO</h2>
+					<h5>Shop your favorite Sneakers here</h5>
+				</div>
+				<div class="right-inductor"><img src="" alt=""></div>
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
